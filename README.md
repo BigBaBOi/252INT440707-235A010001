@@ -10,8 +10,6 @@
 1. Trả lời câu hỏi lý thuyết về kiến thức Web cơ bản.
 2. Thực hiện các bài tập thực hành (Danh sách sản phẩm, Form đăng ký, Đồng hồ đếm ngược).
 
-## 🚀 Link Demo
-Truy cập tại: [https://username.github.io/710-MSSV/](https://username.github.io/710-MSSV/)
 
 ## 🛠 Công nghệ sử dụng
 - **Frontend:** HTML5, CSS3 (Flexbox/Grid), JavaScript (ES6+).
