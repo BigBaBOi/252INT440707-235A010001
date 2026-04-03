@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồng hồ đếm ngược - HP Exam</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-nav"></div>
+
+    <div class="container" style="max-width: 600px;">
+        <h1 class="glass-card">Đồng hồ đếm ngược</h1>
+
+        <div class="glass-card">
+            <div id="timer-display" class="timer-display">10:00</div>
+            <button class="btn btn-primary" onclick="initCountdown(10)">Restart Timer (10m)</button>
+            <p style="margin-top: 1rem; color: var(--text-muted);">Animation sẽ xuất hiện khi thời gian dưới 1 phút!</p>
+        </div>
+    </div>
+
+    <!-- Modal Alert -->
+    <div id="timer-modal" class="modal-overlay">
+        <div class="modal glass-card">
+            <h2 style="color: var(--danger);">🔔 Hết giờ!</h2>
+            <p style="margin-bottom: 2rem;">Thời gian đếm ngược của bạn đã kết thúc.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Đóng</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => initCountdown(10));
+    </script>
+</body>
+</html>

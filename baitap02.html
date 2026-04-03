@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký Tài khoản - HP Exam</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-nav"></div>
+
+    <div class="container" style="max-width: 500px;">
+        <h1 class="glass-card">Đăng ký Tài khoản</h1>
+        
+        <form id="register-form" class="glass-card">
+            <div class="form-group">
+                <label for="name">Họ và tên</label>
+                <input type="text" id="name" placeholder="Nhập tên của bạn..." required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Mật khẩu</label>
+                <input type="password" id="password" placeholder="••••••••" required>
+                <small style="color: var(--text-muted); font-size: 0.8rem;">Ít nhất 8 ký tự, 1 chữ hoa, 1 chữ thường, 1 số.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="github">Link GitHub Dự án</label>
+                <input type="url" id="github" placeholder="https://github.com/user/repo" required>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="agree" required>
+                <label for="agree">Đồng ý với điều khoản dịch vụ</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Đăng ký ngay</button>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', initRegistrationForm);
+    </script>
+</body>
+</html>

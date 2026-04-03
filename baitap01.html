@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách Sản phẩm - HP Exam</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-nav"></div>
+
+    <div class="container">
+        <h1 class="glass-card">Danh sách Sản phẩm</h1>
+
+        <section class="glass-card" style="margin-bottom: 2rem;">
+            <input type="text" id="search-input" placeholder="🔍 Tìm kiếm sản phẩm theo tên..." style="max-width: 500px; display: block; margin: 0 auto;">
+            <div id="error-msg" class="error-msg"></div>
+        </section>
+
+        <div id="product-list" class="product-grid">
+            <!-- Products injected by JS -->
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', initProductSearch);
+    </script>
+</body>
+</html>
